@@ -7,22 +7,22 @@
 #
 # for local exclude patterns please edit .git/info/exclude
 #
-*~
 *.bak
 *.idea
 *.project
 *.swp
+*~
+.TemporaryItems
 .buildpath
 .cache
 .project
 .session
 .settings
-.TemporaryItems
 .webprj
-nbproject
 /.php_cs.cache
 /.php-cs-fixer.cache
 /.phpunit.result.cache
+/infection.log
 /vendor/
 composer.lock
 /.phive
