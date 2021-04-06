@@ -44,7 +44,7 @@ jobs:
         # Note: Unlike the "ci:php:lint" Composer script, we do not use the
         # "parallel-lint" tool here. This allows us to lint the files without
         # depending on any Composer packages.
-        run: find config src tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
+        run: find *.php config src tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
 
   composer-validate:
     name: Composer Validate
@@ -123,6 +123,7 @@ jobs:
           - fixer
           - md
           - psalm
+          - rector
           - sniff
         php-version:
           - '8.1'
